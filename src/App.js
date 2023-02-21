@@ -10,13 +10,33 @@ function App() {
       <NavBar />
       <div className='container'>
         <Jumbotron />
-        <div className='cards-box mb-4'>
+        <div className='cards-box d-flex justify-content-between mb-4'>
           <Card
             imageUrl={'https://via.placeholder.com/500x325'}
+            title={'Card title'}
+            description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'}
+          />
+          <Card
+            imageUrl={'https://via.placeholder.com/500x325'}
+            title={'Card title'}
+            description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '}
+          />
+          <Card
+            imageUrl={'https://via.placeholder.com/500x325'}
+            title={'Card title'}
+            description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'}
+          />
+          <Card
+            imageUrl={'https://via.placeholder.com/500x325'}
+            title={'Card title'}
+            description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '}
           />
         </div>
       </div>
-      <Footer />
+      <Footer
+        website={'Your Website'}
+        year={'2022'}
+      />
     </div>
   )
 }

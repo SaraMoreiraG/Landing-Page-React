@@ -8,15 +8,14 @@ const CardExample = (props) => {
       <Card.Img variant="top" src={props.imageUrl} />
       <Card.Body>
         <Card.Title>
-			Card Title
+			{props.title}
 		</Card.Title>
         <Card.Text>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-			sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			{props.description}
         </Card.Text>
       </Card.Body>
 	  <Card.Footer style={{ background: '#ffffff' }}>
-        	<Button variant="primary">Find Out More!</Button>
+        	<Button variant="primary" href={props.Button}>Find Out More!</Button>
 		</Card.Footer>
     </Card>
   );
@@ -24,6 +23,9 @@ const CardExample = (props) => {
 
 CardExample.propTypes = {
 	imageUrl: PropType.string,
+	title: PropType.string,
+	description: PropType.string,
+	buttonHref: PropType.string
 }
 
 export default CardExample;
