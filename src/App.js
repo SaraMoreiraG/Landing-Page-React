@@ -10,7 +10,7 @@ function App() {
       <NavBar />
       <div className='container'>
         <Jumbotron />
-        <div className='cards-box d-flex justify-content-between mb-4'>
+        <div className='row d-flex justify-content-between mb-4 '>
           <Card
             imageUrl={'https://via.placeholder.com/500x325'}
             title={'Card title'}
